@@ -1,6 +1,6 @@
 const random = () => {
     return Promise.resolve(Math.random())
-}//aa
+}
 
 'Bad Promise Code 💩'
 
