@@ -1,6 +1,6 @@
 const random = () => {
     return Promise.resolve(Math.random())
-}
+}//aa
 
 'Bad Promise Code 💩'
 
@@ -30,7 +30,7 @@ const sumRandomAsyncNums = () => {
 
 'Good Promise Code ✅'
 
-const sumRandomAsyncNums = async() => {
+const sumRandomAsyncNums = async () => {
 
     const first = await random();
     const second = await random();
@@ -43,12 +43,12 @@ const sumRandomAsyncNums = async() => {
     }
 
     const randos = Promise.all([
-        random(), 
+        random(),
         random(),
         random()
     ])
 
-    for(const r of await randos) {
+    for (const r of await randos) {
         console.log(r)
     }
 
